@@ -29,7 +29,12 @@ export default defineConfig({
             name: 'vue-common',
             test: /[\\/]node_modules[\\/](vue|vue-router|vue-i18n|pinia)[\\/]/,
             priority: 100,
-          }
+          },
+          // vendors: {
+          //   name: 'my-chunk-vendors',
+          //   test: /[\\/]node_modules[\\/]/,
+          //   priority: 20, // 优先级，越大优先级越高
+          // },
         },
       },
     },
